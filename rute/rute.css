@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header{   
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 5%;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    font-size: 20px;
+
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+  svg {
+      font-family: "Zen Dots", sans-serif;
+      width: 60%; height: 100%;
+   
+  }
+  svg text {
+      animation: stroke 7s infinite alternate;
+      stroke-width: 1.8;
+      stroke: #040E44;
+      font-size: 30px;
+      height: 100%;
+  }
+  @keyframes stroke {
+      0%   {
+          fill: rgba(255,255,255,0); stroke: #040E44;
+          stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1.8;
+      }
+      70%  {fill: rgba(255,255,255,0); stroke: #040E44; }
+      80%  {fill: rgba(255,255,255,0); stroke: #040E44; stroke-width: 1.8; }
+      100% {
+          fill: #040E44; stroke: rgba(255,255,255,0);
+          stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+      }
+  }
+  nav ul{
+    list-style: none;
+    width: 300%;
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    padding-left: 0px;
+    font-size:small;
+  }
+  
+  nav ul li a{
+    color: #040E44;
+    text-decoration: none;
+  }
+
+  /* chenarele */
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #EBE9F6;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #EBE9F6;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+}
+footer {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    }
+    
+    .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    
+    }
+    
+    .left-section {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .company-name {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: "Zen Dots", sans-serif;
+    }
+    
+    .contact-info p {
+    margin: 5px 0;
+    }
+    
+    
+    
+    .right-section {
+    font-size: 35px;
+    font-weight: bold;
+    }
+    
+    .right-section p {
+    margin: 0;
+    }
+
+    hr.linie{
+        border: none;
+        height: 1px;
+        background-color: #000; 
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
+
+
+    .schedule-container {
+        max-width: 100%;
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+       
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+
+    .kisinAnan{
+        font-family: 'Cabin', sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 17px;
+        border-radius: 10px;
+        border: none;
+        background-color: #EBE9F6;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        margin-bottom:10px
+        
+    }
+    .kisinAnan:hover{
+        background-color:#c8c7c7; 
+        color: #ffffff; 
+    }
+
+    .kisinAnan a{
+        text-decoration: none;
+        color: #000000 ;
+    }
+
+
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    th, td {
+        padding: 6px;
+    }
+    svg{
+        width:120%;
+      }
+}
+
+@media screen and (max-width: 992px) {
+    th, td {
+        padding: 4px;
+    }
+      nav ul{
+        width: 60%;
+      }
+
+
+
+   
+   
+}
+
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+   th, td {
+        font-size: 14px;
+        padding: 6px;
+    }
+    nav ul {
+      width: 200%;
+    }
+   .right-section{
+    display: none;
+   }
+   hr.linie{
+    border: none;
+    height: 1px;
+    background-color: #000; 
+    width: 100%;
+    margin: 20px 0;
+}
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    td {
+        padding-left: 40%;
+    }
+
+    td::before {
+        width: 60%;
+    }
+
+    nav ul{
+      width: 100%;
+    }
+    svg text{
+      font-size: 22px;
+    }
+  
+    .right-section{
+        display: none;
+       }
+       hr.linie{
+        border: none;
+        height: 1px;
+        background-color: #000; 
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
+
+    th, td {
+        font-size: 12px;
+        padding: 4px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th, td {
+        display: block;
+        width: auto;
+        text-align: right;
+        white-space: nowrap;
+    }
+    th::before, td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    th {
+        background-color: transparent;
+        color: #000;
+    }
+}
+
+
+

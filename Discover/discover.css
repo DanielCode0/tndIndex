@@ -1,0 +1,587 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+font-family: 'Cabin', sans-serif;
+background-color: #EBE9F6;
+}
+header{   
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+}
+nav{
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 5%;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  font-size: 20px;
+
+}
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+svg {
+    font-family: "Zen Dots", sans-serif;
+    width: 60%; height: 100%;
+ 
+}
+svg text {
+    animation: stroke 9s infinite alternate;
+    stroke-width: 1.8;
+    stroke: #040E44;
+    font-size: 30px;
+    height: 100%;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(255,255,255,0); stroke: #040E44;
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1.8;
+    }
+    70%  {fill: rgba(255,255,255,0); stroke: #040E44; }
+    80%  {fill: rgba(255,255,255,0); stroke: #040E44; stroke-width: 1.8; }
+    100% {
+        fill: #040E44; stroke: rgba(255,255,255,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+nav ul{
+  list-style: none;
+  width: 300%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  padding-left: 0px;
+  font-size: medium;
+}
+
+nav ul li a{
+  color: #040E44;
+  text-decoration: none;
+}
+
+/* aici prima pgina*/
+.find-container{
+width: 100%;
+background-color: #ffffff;
+height: 115vh;
+text-align: center;
+}
+.find-cont{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.find-cont h1{
+  margin-top: 250px;
+  font-size: 55px;
+  font-weight:bolder;
+  animation: animationtext 8s cubic-bezier(0.12, 0, 0.39, 0) 0s infinite normal none;
+}
+@keyframes animationtext {
+  0% {
+	transform: translate(0);
+  }
+
+  20% {
+	transform: translate(-3px, 3px);
+  }
+
+  40% {
+	transform: translate(-3px, -3px);
+  }
+
+  60% {
+	transform: translate(3px, 3px);
+  }
+
+  80% {
+	transform: translate(3px, -3px);
+  }
+
+  100% {
+	transform: translate(0);
+  }
+}
+.find-container p{
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.693);
+  animation: animationtext 7s cubic-bezier(0.12, 0, 0.39, 0) 0s infinite normal none;
+}
+
+.img-1{
+  position: absolute;
+  top:150px;
+  width: 270px;
+  left:150px;
+  animation: Ani1 4s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none;
+}
+@keyframes Ani1 {
+  0% {
+  transform: translateY(-130%);
+  }
+
+  100% {
+  transform: translateY(0px);
+  }
+}
+.img-2{
+  width: 380px;
+  position: absolute;
+  left: 0%;
+  animation: Ani2 4s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none;
+}
+@keyframes Ani2 {
+  0% {
+  transform: translateY(130%);
+  }
+
+  100% {
+  transform: translateY(0px);
+  }
+}
+.img-3{
+ right:0px;
+ top:120px;
+ height:220px;
+ position: absolute;
+ animation: Ani3 4s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none;
+}
+@keyframes Ani3 {
+  0% {
+  transform: translateX(130%);
+  }
+
+  100% {
+  transform: translateX(0px);
+  }
+}
+.img-4{
+  position: absolute;
+  right: 100px;
+  width: 520px;
+  top:620px;
+  animation: Ani 3s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none;
+}
+@keyframes Ani {
+  0% {
+  transform: translateX(-100%);
+  }
+
+  100% {
+  transform: translateX(0px);
+  }
+}
+
+/*aici se incepe content pentru */
+
+@keyframes appear{
+  from{
+  opacity: 0;
+  scale: 0.5;
+  }
+  to{
+  opacity: 1;
+  scale: 1;
+  }
+  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.main-location {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+.main-location h2{
+margin-top: 200px;
+}
+.main-location p{
+margin-top: 20px;
+}
+.locations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.bukovel1{
+margin-bottom: 200px;
+
+}
+.location {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.location h3 {
+  margin-top: -40px;
+
+}
+
+.location p {
+  color: #666;
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .locations-grid {
+      flex-direction: column;
+  }
+
+  .location {
+      flex: 1 1 100%;
+  }
+}
+
+
+/*aici buy tickts*/
+
+/*footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+footer {
+background-color: #0b1933;
+color: white;
+padding: 20px 0;
+margin-top: 50px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0 20px;
+
+}
+
+.left-section {
+display: flex;
+flex-direction: column;
+}
+
+.company-name {
+font-size: 20px;
+font-weight: normal;
+margin-bottom: 10px;
+font-family: "Zen Dots", sans-serif;
+}
+
+.contact-info p {
+margin: 5px 0;
+}
+.right-section {
+font-size: 35px;
+font-weight: bold;
+}
+
+.right-section p {
+margin: 0;
+}
+
+@media screen and (max-width:1404px){
+nav{
+  width: 100%;
+  padding: 15px 5%;
+  font-size: 12px;
+   height: 100px;
+}
+svg {
+  width: 100%;
+
+}
+svg text {
+  font-size: 25px;
+  stroke: 1px; ;
+}
+.large-image {
+width: 500px;
+height: auto;
+margin-bottom: 10px;
+margin-top: 100px;
+margin-left: 210px;
+}
+
+.small-image1 {
+width: 250px;
+height: auto;
+position: absolute;
+right: 34.5%;
+}
+
+.small-image2 {
+width: 355px;
+height: 250px;
+margin-left: 400px;
+}
+
+}
+@media screen and (max-width:1102px){
+svg{
+  width:120%;
+}
+.find-cont h1{
+  margin-top: 250px;
+  font-size: 45px;
+  font-weight:bolder;
+}
+.find-container p{
+  margin-top: 20px;
+  font-size:14px;
+  color: rgba(0, 0, 0, 0.693);
+}
+
+.img-1{
+  position: absolute;
+  top:150px;
+  width: 220px;
+  left:110px
+}
+.img-2{
+  width: 320px;
+  position: absolute;
+  left: 0%;
+}
+.img-3{
+ right:0px;
+ top:120px;
+ height:180px;
+ position: absolute;
+
+}
+
+.img-4{
+  position: absolute;
+  right: 20px;
+  width: 490px;
+  top:620px;
+}
+}
+@media screen and (max-width:860px){
+
+
+.find-cont h1{
+  margin-top: 250px;
+  font-size: 40px;
+  font-weight:bolder;
+}
+.find-container p{
+  margin-top: 20px;
+  font-size:12px;
+  color: rgba(0, 0, 0, 0.693);
+}
+
+.img-1{
+  position: absolute;
+  top:160px;
+  width: 210px;
+  left:80px
+}
+.img-2{
+  width: 290px;
+  position: absolute;
+  left: 0%;
+}
+.img-3{
+ right:0px;
+ top:120px;
+ height:160px;
+ position: absolute;
+
+}
+
+.img-4{
+  position: absolute;
+  right: 15px;
+  width: 400px;
+  top:620px;
+}
+nav ul {
+  width: 200%;
+}
+
+}
+@media screen and (max-width:713px){
+
+.find-cont h1{
+  margin-top: 230px;
+  font-size: 35px;
+  font-weight:bolder;
+}
+.find-container p{
+  margin-top: 20px;
+  font-size:10px;
+  color: rgba(0, 0, 0, 0.693);
+}
+
+.img-1{
+  position: absolute;
+  top:160px;
+  width: 190px;
+  left:30px
+}
+.img-2{
+display: none;
+}
+.img-3{
+ right:0px;
+ top:120px;
+ height:150px;
+ position: absolute;
+
+}
+.img-4{
+  position: relative;
+  top: 100px;
+  left:1px;
+}
+.main-location {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+
+}
+.bukovel1{
+width: 500px;
+
+}
+.main-location h2{
+margin-top: 200px;
+}
+.main-location p{
+margin-top: 20px;
+font-size: 13px;
+}
+.find-container{
+  height: 90%;
+}
+.right-section{
+  display: none;
+}
+}
+@media screen and (max-width:530px){
+
+.singin{
+  font-size: 9px;
+  padding: 4px 8px;
+}
+.find-cont h1{
+  margin-top: 230px;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.find-container p{
+  margin-top: 20px;
+  font-size:9px;
+}
+.img-1{
+  position: absolute;
+  top:160px;
+  width: 150px;
+  left:20px
+}
+.img-2{
+display: none;
+}
+.img-3{
+ right:0px;
+ top:120px;
+ height:120px;
+ position: absolute;
+
+}
+.img-4{
+  position: relative;
+  top: 90px;
+  left:1px;
+  width: 360px;
+}
+.bukovel1{
+  width: 420px;
+ 
+}
+.right-section {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.right-section p {
+  margin: 0;
+}
+.contact-info p{
+  font-size: 10px;
+}
+nav ul{
+  width: 100%;
+}
+.find-container{
+  height: 90%;
+}
+}
+@media screen and (max-width:451px){
+
+
+.img-4{
+  width: 300px;
+}
+
+.bukovel1{
+  width: 350px;
+
+}
+.img-1{
+  left: 4;
+}
+.img-3{
+  height: 110px;
+}
+.find-container{
+  height: 100%;
+}
+.main-location h2 {
+  margin-top: 10px;
+}
+}

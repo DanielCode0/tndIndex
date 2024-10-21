@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+font-family: 'Cabin', sans-serif;
+}
+header{   
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  background-image: url(./photos/background2_1.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  -webkit-background-position: center;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  top: 0%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 5%;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  font-size: 15px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+svg {
+    font-family: "Zen Dots", sans-serif;
+    width: 100%; height: 100%;
+ 
+}
+svg text {
+    animation: stroke 7s infinite alternate;
+    stroke-width: 1.8;
+    stroke: #040E44;
+    font-size: 30px;
+}
+@keyframes stroke {
+  0%   {
+    fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+  }
+  70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+  80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 1; }
+  100% {
+    fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+  }
+}
+nav ul{
+  list-style: none;
+  width: 300%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  padding-left: 0px;
+
+}
+
+nav ul li a{
+  color: #EBE9F6;
+  text-decoration: none;
+
+}
+
+/* content */
+
+
+.totalitate{
+  display: flex;
+  justify-content: center;
+}
+.chenar{
+  height: auto;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  -moz-backdrop-filter:blur(40px);
+  border: 1px solid #ffffff5b;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.content h1{
+  margin-bottom: 60px;
+}
+.passager-info h2{
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+.passager-info input{
+font-size: 15px;
+padding: 10px 13px;
+width: 75%;
+padding-left: 10px;
+outline: none;
+background: #ffffff;
+color: #000000d7;
+border: 1px solid hsl(0, 0%, 100%);
+border-radius: 8px;
+margin: 5px;
+}
+.passager-info select{
+
+    width: 12.5%;
+    font-size: 12px;
+    padding: 5px 12px 5px 12px;
+    background-color: #ffffff;
+    border: 0px solid #C4D1EB;
+    border-radius: 15px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+}
+.cost{
+margin-top: 90px;
+margin-bottom: 50px;
+}
+
+div.totalCost{
+  font-size: 30px;
+}
+
+.emaill{
+font-size: 15px;
+padding: 10px 13px;
+width: 90%;
+padding-left: 10px;
+outline: none;
+background: #ffffff;
+color: #000000d7;
+border: 1px solid hsl(0, 0%, 100%);
+border-radius: 8px;
+margin-top: 20px;
+}
+.btn-info {
+color: #000000;
+font-size: 17px;
+padding: 15px 85px;
+border-radius: 30px;
+border: 0px solid;
+background: #ffffff;
+
+
+}
+.btn-info:hover {
+color: #000000 ;
+background: #cacaca;
+cursor: pointer;
+} 
+
+footer {
+background-color: #ffffff;
+color: black;
+padding: 20px 0;
+margin-top: 150px;
+margin-bottom: 20px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0 20px;
+
+}
+
+.left-section {
+display: flex;
+flex-direction: column;
+}
+
+.company-name {
+font-size: 20px;
+font-weight: normal;
+margin-bottom: 10px;
+font-family: "Zen Dots", sans-serif;
+}
+
+.contact-info p {
+margin: 5px 0;
+}
+
+
+
+.right-section {
+font-size: 35px;
+font-weight: bold;
+}
+
+.right-section p {
+margin: 0;
+}
+
+/* aici ii pentru bagaje */
+
+select.bagg{
+width: 100px;
+}
+
+#email::placeholder{
+color: #615f5fd7;
+}
+
+.backer{  
+background-image: url(/photos/background2_1.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center; 
+background-attachment: fixed;
+-webkit-background-attachment: fixed;
+-moz-background-attachment: fixed;
+}
+
+@media screen and (max-width:501px) {
+
+  .chenar{
+    width: 300px;
+  }
+  .left-section{
+    font-size: x-small;
+  }
+  .right-section{
+    font-size: 15px;
+  }
+}
+
+
+.custom_input select {
+  font-size: 16px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  border-radius: 4px;
+  margin-left: 5px;
+  width: 127px;
+}
+
+.custom_input label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.custom_input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  margin: 2px;
+  justify-content: center;
+}
+@media screen and (max-width: 815px) {
+
+  nav ul {
+    width: 200%;
+  }
+}
+
+
+
+@media screen and (max-width:560px){
+
+    nav ul{
+      width: 100%;
+    }
+  
+}
+@media screen and (max-width:455px){
+  .backer{
+    background-position: 70%;
+}
+    svg text{
+      font-size: 22px;
+    }
+    nav ul li{
+      font-size: small;
+    }
+    .right-section{
+      display: none;
+    }
+}

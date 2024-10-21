@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронировать билеты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./photos/Frame_3__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="purchase.css">
+    <script src="purchase.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("ogbLkYRmD8eb-adet");
+        })();
+    </script>
+
+</head>
+<body>
+    <div class="backer">
+        <nav>
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    <a href="./index.html">TNDBUS</a>
+                </text> 
+            </svg> 
+            <ul>
+                <li>
+                    <a href="./rute/rute.html">Маршруты</a>
+                </li>
+            </ul>  
+        </nav>
+
+        <div class="totalitate">
+            <div class="chenar">
+                <div class="content">
+                    <h1>Забронировать Билеты</h1>
+                    <div id="purchaseForm" class="passager-info"></div>
+                    <h2 id="totalCost" class="cost"></h2>
+                    <label for="email" class="place-email" placeholder="E-mail"></label>
+                    <input type="email" id="email" class="emaill" placeholder="Ваша электронная почта">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="confirmPurchase" class="btn-info"><strong>Подтвердите бронирование</strong></button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="left-section">
+                    <div class="company-name">TRANSNADAND AUTO</div>
+                    <div class="contact-info">
+                        <p>+373 69 103 722</p>
+                        <p>transnadandauto@gmail.com</p>
+                    </div>
+                </div>
+            
+                <div class="right-section">
+                    <p>Всегда находите лучший выбор</p>
+                </div>
+            </div>
+          </footer>
+    </div>
+
+</body>
+</html>

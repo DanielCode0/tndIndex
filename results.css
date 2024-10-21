@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'Cabin', sans-serif;
+}
+
+header{   
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  background-image: url(./photos/background2_1.png);
+  -webkit-background-image: url(./photos/background2_1.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  -webkit-background-position: center;
+}
+nav{
+  width: 100%;
+  height: 7%;
+  display: flex;
+  top: 0%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 5%;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  font-size: 20px;
+  position: fixed;
+  box-sizing: border-box;
+ 
+}
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+svg {
+    font-family: "Zen Dots", sans-serif;
+    width: 100%; height: 100%;
+ 
+}
+svg text {
+    animation: stroke 7s infinite alternate;
+    stroke-width: 1;
+    stroke: #040E44;
+    font-size: 35px;
+    height: 100%;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(255,255,255,0); stroke: #EBE9F6;
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1.8;
+    }
+    70%  {fill: rgba(255,255,255,0); stroke: #EBE9F6; }
+    80%  {fill: rgba(255,255,255,0); stroke: #EBE9F6; stroke-width: 1.8; }
+    100% {
+        fill: #EBE9F6; stroke: rgba(255,255,255,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+nav ul{
+  list-style: none;
+  width: 300%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  padding-left: 0px;
+}
+
+nav ul li a{
+  color: #EBE9F6;
+  text-decoration: none;
+}
+
+/*Aici se termina navigation bar!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+
+/*aici se incep chenarele !!!!!!!!!!!!!!!!!!!*/
+
+ .chenare-bilete1{
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  margin-top: 4%;
+  background-color: transparent;
+ 
+ }
+
+.continue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.duration {
+  align-items: center;
+  font-size: 18px;
+}
+
+.duration span {
+  margin-right: 10px;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+}
+
+button.continue-btn {
+  background-color: white;
+  color: #000000;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.continue-btn:hover {
+  color: #000000;
+  background: #cacaca;
+}
+
+.price-info span {
+  margin-right: 10px;
+}
+
+.price-info .icon {
+margin-right: 5px;
+}
+
+.backgr{
+  background-image: url(/photos/background2_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #ffffff;
+  color: black;
+  padding: 20px 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+ 
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: "Zen Dots", sans-serif;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+
+
+.right-section {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.right-section p {
+  margin: 0;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.interval {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+}
+
+  header{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    padding: 15px 5%;
+    font-size: 12px;
+     height: 100px;
+  }
+  svg {
+    width: 100%;
+  
+  }
+  svg text {
+    font-size: 25px;
+    stroke: width 1px; ;
+  }
+  /*responsive shit tabel*/
+  
+  .tabel hr{
+  top:12%;
+  }
+  .tabel{
+  width: 100%;
+  height: 140px;
+  }
+  .chenar{
+  width: 100%;
+  margin-top: -40px;
+  height: 10px ;
+  margin-left: 10%;
+  border-radius: 25px; 
+  padding: 30px;
+  display: block;
+  
+  }
+  
+  .input::placeholder{
+  font-size: 16px;
+  }
+  
+  .svg_icon{
+  height: 16px;
+  width: 16px; 
+  }
+  
+  .input {
+  padding:  15px 7px;
+  width: 100%;
+  font-size: 16px;
+  padding-left:23px ;
+  }
+
+  .input:focus {
+  border-radius: 10px;
+  }
+
+  .date{
+  font-size: 16px;
+  padding:  14.2px 7px;
+  width: 100%;
+  padding-left: 20px;
+  }
+
+  .testbutton {
+  font-size: 17px;
+  padding: 15px 30px;
+  margin-left: 12px;
+  }
+
+
+  .chenare-bilete1{
+  height: 10vh;
+  margin-top: 10%;
+  }
+
+  .duration {
+  font-size: 13px;
+  }
+
+
+/* De aici incep style-rile de la inceput pentru contentul din tabel */
+
+h1.tripInfoh1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time-details {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.onewayInfo, .roundInfo {
+  display: inline;
+  width: 100%;
+  font-size: 20px;
+}
+
+.onewayInfo{
+  margin-bottom: -100px;
+}
+
+.bottom-section {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+}
+
+.continue-btn {
+  margin-left: auto;
+}
+
+div.time{
+  margin-bottom: 80px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 338px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 900px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  -moz-backdrop-filter:blur(40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff5f;
+  margin-top: -150px;
+}
+
+.onewayInfo {
+  margin-bottom: -125px;
+}
+
+.roundInfo {
+  text-align: right;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+}
+
+.continue-btn {
+  margin-left: auto;
+}
+
+  /*responsive shit */
+
+  @media screen and (max-width: 815px) {
+    .card {
+      height: auto;
+      width: 500px;
+    }  
+    .time {
+      display: flex;
+      flex-direction: column;
+    }
+    .roundInfo {
+      text-align: left;
+      margin-top: 2%;
+    }
+    .onewayInfo {
+      margin-bottom: 6px;
+    }
+    nav ul {
+      width: 200%;
+    }
+  }
+  
+ 
+
+  @media screen and (max-width:560px){
+      .tripInfoh1{
+        font-size: 30px;
+      }
+      .onewayInfo{
+        font-size: 15px;
+      }
+      .roundInfo{
+        font-size: 15px;
+      }
+      .card{
+        width:400px;
+      }
+      .left-section{
+        font-size: x-small;
+      }
+      .right-section{
+        font-size: 15px;
+      }
+      nav ul{
+        width: 100%;
+      }
+   
+  }
+  @media screen and (max-width:455px){
+    .backgr{
+      background-position: 70%;
+  }
+      .tripInfoh1{
+        font-size: 30px;
+      }
+      .onewayInfo{
+        font-size: 15px;
+      }
+      .roundInfo{
+        font-size: 15px;
+      }
+      .card{
+        width:290px;
+      }
+      svg text{
+        font-size: 22px;
+      }
+      .right-section{
+        display: none;
+      }
+
+  }

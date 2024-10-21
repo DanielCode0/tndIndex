@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0ff;
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    background-image: url(./photo-l/background2_1.png);
+    -webkit-background-image: url(./photo-l/background2_1.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    -webkit-background-position: center;
+}
+svg {
+	font-family: "Zen Dots", sans-serif;
+	width: 50%; height: 100%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+ 
+}
+svg text {
+	animation: stroke 7s infinite alternate;
+	stroke-width: 1;
+	stroke: #FFFFFF;
+	font-size: 30px;
+    height: 100%;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+        -webkit-fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+        -webkit-stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	70%  {
+        fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); 
+        -webkit-fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); 
+    }
+	80%  {
+        fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 1; 
+        -webkit-fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 1; 
+    }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+        -webkit-fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        -webkit-stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.container {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter:blur(20px);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 900px;
+    height: 470px;
+    border: 1px solid #ffffff33;
+}
+h2{
+    font-size: 25px;
+    margin-left: 15%;
+}
+
+form {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input {
+    width: 30%;
+    padding: 13px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+   margin-left: 7%;
+}
+
+input[type="email"], input[type="password"] {
+    background-color: #ffffff;
+    color: #040E44;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.login{background-color:#f1f1ff;
+    color: #000000;
+    padding: 7px 129px;
+    border-radius: 20px;
+    border: 0px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+.login:hover{
+    background-color: #dfdfdf;
+}
+
+.actions {
+     margin-left: 20px;
+     margin-top: 10px;
+}
+
+.actions a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10px;
+}
+.Create{
+    margin-right: 110px;
+    margin-left: 6%;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/*respomsive shit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (max-width:1005px){
+    .container {
+        padding: 40px;
+        border-radius: 30px;
+        width: 500px;
+        height: 470px;
+    }
+    svg{
+        width: 70%
+    }
+    svg text{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+        margin-left: 14%;
+    }
+    input {
+        width: 40%;
+        padding: 8px;
+        margin: 10px 0;
+        border-radius: 20px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .login{
+        padding: 7px 95px;
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 5%;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .actions {
+         margin-left: -1px;
+         margin-top: 8px;
+    }
+    
+    .actions a {
+        font-size: 7px;
+    }
+    .Create{
+        margin-right: 90px;
+        margin-left: 6%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:596px){
+    .container{
+        width: 300px;
+    }
+    svg{
+        width: 75%
+    }
+    svg text{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 15px;
+        margin-left: 14%;
+    }
+    input {
+        width: 50%;
+        padding: 8px;
+        margin: 10px 0;
+        border-radius: 20px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .login{
+        padding: 4px 69px;
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 5%;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .actions {
+         margin-left: 0.5px;
+         margin-top: 8px;
+    }
+    
+    .actions a {
+        font-size: 7px;
+    }
+    .Create{
+        margin-right: 45px;
+        margin-left: 6%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    body{
+        background-position: 70%;
+    }
+}
+@media screen and (max-width:390px){
+    .container{
+        width: 230px;
+    }
+    svg{
+        width: 100%
+    }
+    svg text{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 13px;
+        margin-left: 14%;
+    }
+    input {
+        width: 60%;
+        padding: 7px;
+        margin: 6px 0;
+        border-radius: 20px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .login{
+        padding: 4px 62px;
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 5%;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .actions {
+         margin-left: 0.5px;
+         margin-top: 8px;
+    }
+    
+    .actions a {
+        font-size: 7px;
+    }
+    .Create{
+        margin-right: 32px;
+        margin-left: 6%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+}

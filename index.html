@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./photos/Frame_3__1_-removebg-preview.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+  <script src="./routes.js"></script>
+  <title>Transnadand AUTO | Ucraina - Moldova</title>
+  <meta name="description" content="Transport cu autocarul la nivel de lux Moldova/Ucraina si Ucraina/Moldova" />
+        
+  <header class="page">
+    <div class="wrapper" >
+      <nav> <div class="nav-pro"></div>
+        <svg>
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            <a href="./index.html">TNDBUS</a>
+          </text>
+        </svg> 
+        <ul>
+          <li>
+            <a href="./rute/rute.html">Маршруты</a>
+          </li>
+        
+          <li>
+            <a href="./Log in/log.html">Pегистрация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1 class="h"> Движимый совершенством,  <br> подпитываемый страстью<h1>
+        <p class="p"> Раскройте потенциал бесперебойной транспортировки вместе с нами<br>
+            Ориентируйтесь в будущем в управлении грузоперевозками, доставляя<br>
+            Надежность и инновации на каждом шагу.</p>
+      </div>
+      
+    </div> 
+</header> 
+    
+<form id="searchForm">
+  <div class="tabelul">
+      <div class="chenar">
+          <div class="content_tabel">
+              <div class="custom1-select">
+                  <select id="tripType" required>
+                      <option value="oneway">Одностороннее Движение</option>
+                      <option value="roundtrip">Поездка Туда и Обратно</option>
+                  </select>
+              </div>
+              <br>
+              <div class="flex-container">
+                  <div class="flex-items">
+                      <div class="custom_input">
+                          <img class="svg_icon bi-search" src="photos/loc.png" alt="">
+                         <input type="text" id="from" class="input" list="fromRoutes" placeholder="От" required>
+                          <datalist id="fromRoutes"></datalist>
+                      </div>
+                  </div>
+                  <div class="flex-items">
+                      <div class="custom_input">
+                          <img class="svg_icon bi-search" src="photos/loc.png" alt="">
+                           <input type="text" id="to" class="input" list="toRoutes" placeholder="До"  required>
+                          <datalist id="toRoutes"></datalist>
+                      </div>
+                  </div>
+                  <div class="flex-items">
+                      <div class="custom_input">
+                      <input type="date" id="boardingDate" class="date" required >
+                      </div>
+                  </div>
+                  <div class="flex-items">
+                      <div class="custom_input">
+                       <input type="date" id="returnDate" class="date" placeholder="Return Date">
+                      </div>
+                  </div>
+                  <div class="flex-items">
+                    <div class="custom_input">
+                        <img class="svg_icon bi-search" src="photos/pasageri.png" alt="">
+                        <input type="number" id="passengers" class="input" placeholder="Пассажиры" required max="40">
+                    </div>
+                </div>                         
+                  <div class="flex-items">
+                      <button type="submit" class="testbutton">Поиск</button>
+                  </div>
+              </div>
+              <div id="errorMessage" style="color: red; display: none; font-size: 25px; text-align: center; margin-top: -100px;"></div>
+          </div>
+      </div>
+  </div>
+</form>
+
+       <!-- aici se incepe about us !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+       <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h1>О нас</h1>
+                <p>Мы стремимся обеспечить безопасность, надежность и 
+                    Комфортный транспорт для нашего сообщества. 
+                    Уделяя особое внимание удовлетворенности и безопасности клиентов,
+                    Наша опытная команда гарантирует беспроблемное путешествие 
+                    Каждый раз.</p>
+                <a href="About us/about.html"><button class="find-more">Узнать больше</button></a>
+            </div>
+            <div class="about-image">
+                  <img class="image-placeholder1" src="photos/ab.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="health-security">
+        <div class="container2">
+            <div class="health-image">
+              <img class="image-placeholder2" src="photos/sanitize-bus 1.png" alt="">
+            </div>
+            <div class="health-content">
+                <h1>Здоровье и безопасность</h1>
+                <p>Для вашего здоровья и безопасности в автобусе, всегда 
+                    Носите маску и используйте дезинфицирующее средство для рук после 
+                    прикосновение к поверхностям. Соблюдайте физическую дистанцию 
+                    от других пассажиров.</p>
+               <a href="Health/health.html"> <button class="find-more">Узнать больше</button></a>
+            </div>
+        </div>
+    </section>
+
+  <!-- aici se incepe populafr destinations !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+  
+  <div class="container-des">
+    <h1>Популярные направления</h1>
+    <div class="content-des">
+        <div class="text-des">
+            <p>Вдохновляющие истории о путешествиях со всего мира, рассказанные 
+                через локальную призму в нашем журнале «Окно» 
+                Сиденье. Вдохновляющие истории о путешествиях со всего мира.
+              </p>
+            <a href="Discover/discover.html"> <button class="btn-des">
+                Вдохновляйтесь
+             </button></a>
+
+        </div>
+        <div class="images-des">
+            <div class="image-des">
+                <img src="photos/chisinau.png" alt="Bukovel">
+                <span>Кишинёв</span>
+            </div>
+            <div class="image-des">
+                <img src="photos/bender.png" alt="Kiev">
+                <span>Бендеры</span>
+            </div>
+            <div class="image-des">
+                <img src="photos/iujnoucrainsk.png" alt="Odesa">
+                <span>Южноукраинск</span>
+            </div>
+            <div class="image-des">
+                <img src="photos/R 7.png" alt="Kharkiv">
+                <span>	Подольск</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- aici se incepe get started!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<div class="get-started">
+   <div class="content-get">
+     <h1>
+        Oткройте для себя неограниченные возможности путешествовать с комфортом 
+     </h1> 
+    <a href="rute/rute.html"> <button class="btn-gettstarted">
+        Маршруты
+     </button></a>
+   </div>
+</div>
+
+
+<footer>
+  <div class="footer-container">
+      <div class="left-section">
+          <div class="company-name">TRANSNADAND AUTO</div>
+          <div class="contact-info">
+              <p>+373 69 103 722</p>
+              <p>transnadandauto@gmail.com</p>
+          </div>
+      </div>
+  
+      <div class="right-section">
+          <p>Всегда находите лучший выбор</p>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
